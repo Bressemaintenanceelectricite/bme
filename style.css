@@ -211,6 +211,37 @@ nav a:hover{
     transition:.3s;
 
 }
+.btn-vert{
+
+    background:#28a745;
+
+    color:white;
+
+    padding:18px 35px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    display:inline-block;
+
+    width:240px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.btn-vert:hover{
+
+    transform:translateY(-4px);
+
+    background:#218838;
+
+}
 
 .btn-blanc{
 
