@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bresse Maintenance Électricité</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#222;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(0,0,0,.75);
+backdrop-filter:blur(8px);
+z-index:1000;
+}
+
+header h2{
+color:white;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:30px;
+font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffc400;
+}
+
+.hero{
+
+height:100vh;
+
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:24px;
+
+margin-bottom:40px;
+
+}
+
+.btn{
+
+background:#ffc400;
+
+padding:18px 40px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+color:#111;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:white;
+
+}
+
+section{
+
+padding:90px 10%;
+
+}
+
+h2{
+
+font-size:38px;
+
+margin-bottom:40px;
+
+text-align:center;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+}
+
+.card{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card span{
+
+font-size:55px;
+
+}
+
+.card h3{
+
+margin:20px 0;
+
+}
+
+.contact{
+
+background:#0b1d36;
+
+color:white;
+
+text-align:center;
+
+}
+
+.contact p{
+
+margin:12px 0;
+
+font-size:20px;
+
+}
+
+footer{
+
+background:#091321;
+
+color:white;
+
+padding:30px;
+
+text-align:center;
+
+}
+
+@media(max-width:800px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+header{
+
+flex-direction:column;
+
+}
+
+nav{
+
+margin-top:15px;
+
+}
+
+nav a{
+
+margin:0 10px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h2>B.M.E</h2>
+
+<nav>
+
+<a href="#services">Services</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>BRESSE MAINTENANCE ÉLECTRICITÉ</h1>
+
+<p>
+
+Électricité • Climatisation • Photovoltaïque • Fibre Optique
+
+</p>
+
+<a class="btn" href="#contact">
+
+DEMANDER UN DEVIS
+
+</a>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2>Nos services</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<span>⚡</span>
+
+<h3>Électricité</h3>
+
+<p>Installation, rénovation, dépannage et mise aux normes.</p>
+
+</div>
+
+<div class="card">
+
+<span>❄️</span>
+
+<h3>Climatisation</h3>
+
+<p>Pose, entretien et remplacement de climatisations.</p>
+
+</div>
+
+<div class="card">
+
+<span>☀️</span>
+
+<h3>Photovoltaïque</h3>
+
+<p>Installation de panneaux solaires et autoconsommation.</p>
+
+</div>
+
+<div class="card">
+
+<span>📡</span>
+
+<h3>Fibre Optique</h3>
+
+<p>Réseaux cuivre, fibre et infrastructures télécom.</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact</h2>
+
+<p><strong>Bresse Maintenance Électricité</strong></p>
+
+<p>📍 42 Route de Saint Didier - 01310 Saint-Martin-le-Châtel</p>
+
+<p>📞 04 74 42 93 56</p>
+
+<p>✉ contact@bme01.fr</p>
+
+<br>
+
+<a class="btn" href="mailto:contact@bme01.fr">
+
+Envoyer un e-mail
+
+</a>
+
+</section>
+
+<footer>
+
+© 2026 Bresse Maintenance Électricité - Tous droits réservés.
+
+</footer>
+
+</body>
+
+</html>
