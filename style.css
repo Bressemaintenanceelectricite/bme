@@ -178,13 +178,21 @@ nav a:hover{
 
 .hero-buttons{
 
+    position:absolute;
+
+    right:8%;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
     display:flex;
 
-    justify-content:center;
+    flex-direction:column;
 
     gap:20px;
 
-    flex-wrap:wrap;
+    align-items:center;
 
 }
 
@@ -192,35 +200,19 @@ nav a:hover{
 
 .btn-jaune{
 
-    background:#ffd000;
+    .btn-jaune{
 
-    color:#111;
+    width:240px;
 
-    padding:18px 38px;
-
-    border-radius:50px;
-
-    text-decoration:none;
-
-    font-weight:700;
-
-    transition:.3s;
+    text-align:center;
 
 }
 
 .btn-blanc{
 
-    background:white;
+   width:240px;
 
-    color:#0a2c54;
-
-    padding:18px 38px;
-
-    border-radius:50px;
-
-    text-decoration:none;
-
-    font-weight:700;
+    text-align:center;
 
 }
 
