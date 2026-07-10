@@ -3,210 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Bresse Maintenance Électricité</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<style>
-
-*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
-
-body{
-background:#f4f7fb;
-color:#222;
-line-height:1.6;
-}
-
-header{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-padding:18px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:#0b2440;
-z-index:1000;
-}
-
-header h2{
-color:white;
-font-size:30px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-margin-left:30px;
-font-weight:600;
-}
-
-nav a:hover{
-color:#ffd000;
-}
-
-.hero{
-
-height:100vh;
-
-background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80");
-
-background-size:cover;
-
-background-position:center;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-text-align:center;
-
-color:white;
-
-padding:20px;
-
-}
-
-.hero h1{
-font-size:62px;
-margin-bottom:20px;
-}
-
-.hero p{
-font-size:25px;
-margin-bottom:40px;
-}
-
-.btn{
-
-display:inline-block;
-
-padding:18px 40px;
-
-background:#ffd000;
-
-color:#111;
-
-border-radius:50px;
-
-text-decoration:none;
-
-font-weight:bold;
-
-transition:.3s;
-
-}
-
-.btn:hover{
-transform:scale(1.05);
-}
-
-section{
-padding:90px 8%;
-}
-
-h2{
-text-align:center;
-font-size:40px;
-margin-bottom:50px;
-color:#0b2440;
-}
-
-.grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-gap:30px;
-}
-
-.box{
-
-background:white;
-
-padding:35px;
-
-border-radius:20px;
-
-box-shadow:0 15px 35px rgba(0,0,0,.08);
-
-transition:.3s;
-
-}
-
-.box:hover{
-
-transform:translateY(-10px);
-
-}
-
-.box h3{
-
-margin:20px 0;
-
-color:#0b2440;
-
-}
-
-.contact{
-
-background:#0b2440;
-
-color:white;
-
-text-align:center;
-
-}
-
-.contact h2{
-color:white;
-}
-
-.contact p{
-margin:15px;
-font-size:20px;
-}
-
-footer{
-
-background:#08192d;
-
-color:white;
-
-text-align:center;
-
-padding:30px;
-
-}
-
-@media(max-width:800px){
-
-header{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
-
-nav a{
-margin:0 10px;
-}
-
-.hero h1{
-font-size:38px;
-}
-
-.hero p{
-font-size:18px;
-}
-
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -214,35 +18,61 @@ font-size:18px;
 
 <header>
 
-<h2>B.M.E</h2>
+<div class="logo">
+<img src="images/logo.png" alt="Bresse Maintenance Électricité">
+</div>
 
 <nav>
 
 <a href="#services">Services</a>
 
+<a href="#entreprise">Entreprise</a>
+
 <a href="#contact">Contact</a>
 
 </nav>
+
+<div class="phone">
+
+📞 04 74 42 93 56
+
+</div>
 
 </header>
 
 <section class="hero">
 
-<div>
+<div class="hero-content">
 
-<h1>BRESSE MAINTENANCE ÉLECTRICITÉ</h1>
+<h1>
+
+Votre expert en électricité,<br>
+climatisation et photovoltaïque
+
+</h1>
 
 <p>
 
-Électricité • Climatisation • Photovoltaïque • Fibre Optique
+Intervention dans l'Ain, le Rhône, le Jura,
+la Saône-et-Loire et l'Isère.
 
 </p>
 
-<a href="#contact" class="btn">
+<div class="buttons">
+
+<a href="#contact" class="btn jaune">
 
 Demander un devis
 
 </a>
+
+<a href="mailto:contact@bme01.fr" class="btn blanc">
+
+Nous contacter
+
+</a>
+
+</div>
 
 </div>
 
@@ -252,53 +82,125 @@ Demander un devis
 
 <h2>Nos services</h2>
 
-<div class="grid">
+<div class="cards">
 
-<div class="box">
-<h3>⚡ Électricité</h3>
-<p>Installation, rénovation, dépannage, mise aux normes.</p>
+<div class="card">
+
+⚡
+
+<h3>Électricité</h3>
+
+<p>
+
+Installation, rénovation, dépannage et mise aux normes.
+
+</p>
+
 </div>
 
-<div class="box">
-<h3>❄ Climatisation</h3>
-<p>Pompes à chaleur, pose, entretien et dépannage.</p>
+<div class="card">
+
+❄️
+
+<h3>Climatisation</h3>
+
+<p>
+
+Installation, entretien et dépannage.
+
+</p>
+
 </div>
 
-<div class="box">
-<h3>☀ Photovoltaïque</h3>
-<p>Installation de panneaux solaires et autoconsommation.</p>
+<div class="card">
+
+☀️
+
+<h3>Photovoltaïque</h3>
+
+<p>
+
+Autoconsommation et installation.
+
+</p>
+
 </div>
 
-<div class="box">
-<h3>📡 Fibre Optique</h3>
-<p>Réseaux fibre, cuivre et infrastructures télécom.</p>
+<div class="card">
+
+📡
+
+<h3>Fibre optique</h3>
+
+<p>
+
+Réseaux fibre et télécommunications.
+
+</p>
+
 </div>
 
 </div>
 
 </section>
 
-<section class="contact" id="contact">
+<section id="entreprise">
+
+<h2>Pourquoi choisir B.M.E ?</h2>
+
+<div class="avantages">
+
+<div>✔ Entreprise locale</div>
+
+<div>✔ QualiPV 500</div>
+
+<div>✔ QualiPAC</div>
+
+<div>✔ Assurance décennale</div>
+
+<div>✔ Devis gratuit</div>
+
+<div>✔ Intervention rapide</div>
+
+</div>
+
+</section>
+
+<section id="contact">
 
 <h2>Contact</h2>
 
-<p><strong>Bresse Maintenance Électricité</strong></p>
+<p>
 
-<p>42 Route de Saint Didier<br>01310 Saint-Martin-le-Châtel</p>
+<strong>Bresse Maintenance Électricité</strong>
 
-<p>📞 04 74 42 93 56</p>
-
-<p>✉ contact@bme01.fr</p>
+</p>
 
 <p>
 
-<a class="btn" href="mailto:contact@bme01.fr">
+42 Route de Saint Didier<br>
+
+01310 Saint-Martin-le-Châtel
+
+</p>
+
+<p>
+
+📞 04 74 42 93 56
+
+</p>
+
+<p>
+
+✉ contact@bme01.fr
+
+</p>
+
+<a class="btn jaune" href="mailto:contact@bme01.fr">
 
 Envoyer un e-mail
 
 </a>
-
-</p>
 
 </section>
 
@@ -309,4 +211,5 @@ Envoyer un e-mail
 </footer>
 
 </body>
+
 </html>
