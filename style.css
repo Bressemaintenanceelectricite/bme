@@ -125,17 +125,22 @@ nav a:hover{
 
 .hero{
 
-    height:88vh;
+    min-height:700px;
 
     background:
-
-    linear-gradient(rgba(10,44,84,.72),rgba(10,44,84,.72)),
-
-    url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80");
+    linear-gradient(rgba(8,32,60,.75),rgba(8,32,60,.75)),
+    url("images/hero.jpg");
 
     background-size:cover;
-
     background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:left;
+    color:white;
+}
 
     display:flex;
 
