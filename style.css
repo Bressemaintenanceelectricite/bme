@@ -1,3 +1,7 @@
+/* ===========================
+   BRESSE MAINTENANCE ELECTRICITE
+=========================== */
+
 *{
     margin:0;
     padding:0;
@@ -10,64 +14,124 @@ html{
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#f5f7fb;
-    color:#222;
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
 }
 
-/*************** HEADER ****************/
+/**************** TOP BAR ****************/
 
-header{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:90px;
-    background:#0f2f55;
+.topbar{
+    background:#0a2c54;
+    color:white;
+    padding:10px 8%;
+    text-align:right;
+    font-size:15px;
+}
+
+.topbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.topbar a:hover{
+    color:#ffd000;
+}
+
+/**************** NAVBAR ****************/
+
+.navbar{
+
+    height:95px;
+
+    background:white;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
     padding:0 8%;
+
+    position:sticky;
+
+    top:0;
+
     z-index:1000;
-    box-shadow:0 5px 20px rgba(0,0,0,.15);
+
+    box-shadow:0 3px 20px rgba(0,0,0,.08);
+
 }
 
 .logo img{
-    height:110px;
+
+    height:80px;
+
 }
 
 nav{
+
     display:flex;
+
     gap:35px;
+
 }
 
 nav a{
-    color:#fff;
+
+    color:#0a2c54;
+
     text-decoration:none;
+
     font-weight:600;
+
     transition:.3s;
+
 }
 
 nav a:hover{
-    color:#f7c600;
+
+    color:#ffd000;
+
 }
 
-.phone{
-    color:white;
+.btn-menu{
+
+    background:#ffd000;
+
+    color:#111;
+
+    padding:14px 24px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
     font-weight:bold;
-    font-size:18px;
+
+    transition:.3s;
+
 }
 
-/*************** HERO ****************/
+.btn-menu:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/**************** HERO ****************/
 
 .hero{
 
-    margin-top:90px;
-
-    min-height:85vh;
+    height:88vh;
 
     background:
-    linear-gradient(rgba(15,47,85,.75),rgba(15,47,85,.75)),
-    url("https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1800&q=80");
+
+    linear-gradient(rgba(10,44,84,.72),rgba(10,44,84,.72)),
+
+    url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80");
 
     background-size:cover;
 
@@ -75,90 +139,137 @@ nav a:hover{
 
     display:flex;
 
-    align-items:center;
-
     justify-content:center;
+
+    align-items:center;
 
     text-align:center;
 
     color:white;
 
-    padding:40px;
+    position:relative;
 
 }
 
 .hero-content{
+
+    position:relative;
+
+    z-index:2;
+
     max-width:900px;
+
+    padding:20px;
+
 }
 
 .hero h1{
+
     font-size:58px;
-    line-height:1.2;
+
     margin-bottom:25px;
+
+    line-height:1.2;
+
 }
 
 .hero p{
-    font-size:22px;
+
+    font-size:24px;
+
     margin-bottom:40px;
+
 }
 
-/*************** BOUTONS ****************/
+.hero-buttons{
 
-.buttons{
     display:flex;
+
     justify-content:center;
+
     gap:20px;
+
     flex-wrap:wrap;
+
 }
 
-.btn{
-    padding:18px 35px;
-    border-radius:50px;
-    text-decoration:none;
-    font-weight:700;
-    transition:.3s;
-}
+/**************** BOUTONS ****************/
 
-.jaune{
-    background:#f7c600;
+.btn-jaune{
+
+    background:#ffd000;
+
     color:#111;
+
+    padding:18px 38px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
 }
 
-.blanc{
+.btn-blanc{
+
     background:white;
-    color:#0f2f55;
+
+    color:#0a2c54;
+
+    padding:18px 38px;
+
+    border-radius:50px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
 }
 
-.btn:hover{
+.btn-jaune:hover,
+
+.btn-blanc:hover{
+
     transform:translateY(-4px);
+
 }
 
-/*************** SECTIONS ****************/
+/**************** SECTIONS ****************/
 
 section{
+
     padding:90px 8%;
+
 }
 
 h2{
+
     text-align:center;
-    color:#0f2f55;
-    font-size:40px;
-    margin-bottom:50px;
+
+    font-size:42px;
+
+    color:#0a2c54;
+
+    margin-bottom:60px;
+
 }
 
-/*************** SERVICES ****************/
+/**************** SERVICES ****************/
 
-.cards{
+.services{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 
     gap:30px;
 
 }
 
-.card{
+.service{
 
     background:white;
 
@@ -168,29 +279,35 @@ h2{
 
     text-align:center;
 
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
 
     transition:.3s;
 
-    font-size:18px;
-
 }
 
-.card:hover{
+.service:hover{
 
     transform:translateY(-10px);
 
 }
 
-.card h3{
+.icone{
 
-    margin:20px 0;
+    font-size:55px;
 
-    color:#0f2f55;
+    margin-bottom:20px;
 
 }
 
-/*************** ENTREPRISE ****************/
+.service h3{
+
+    color:#0a2c54;
+
+    margin-bottom:15px;
+
+}
+
+/**************** AVANTAGES ****************/
 
 .avantages{
 
@@ -204,65 +321,85 @@ h2{
 
 .avantages div{
 
-    background:#0f2f55;
+    background:#0a2c54;
 
     color:white;
+
+    text-align:center;
 
     padding:25px;
 
     border-radius:15px;
 
-    text-align:center;
-
     font-weight:600;
 
 }
 
-/*************** CONTACT ****************/
+/**************** REALISATIONS ****************/
 
-#contact{
-
-    background:#0f2f55;
-
-    color:white;
+.centre{
 
     text-align:center;
 
-}
-
-#contact h2{
-
-    color:white;
+    font-size:20px;
 
 }
 
-#contact p{
+/**************** CONTACT ****************/
 
-    margin:15px 0;
+.contact{
 
-    font-size:18px;
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+    flex-wrap:wrap;
 
 }
 
-/*************** FOOTER ****************/
+.contact h3{
+
+    color:#0a2c54;
+
+    margin-bottom:20px;
+
+}
+
+.contact p{
+
+    margin-bottom:12px;
+
+}
+
+/**************** FOOTER ****************/
 
 footer{
 
-    background:#081c33;
+    background:#08192d;
 
     color:white;
 
     text-align:center;
 
-    padding:25px;
+    padding:35px;
 
 }
 
-/*************** MOBILE ****************/
+/**************** RESPONSIVE ****************/
 
 @media(max-width:900px){
 
-header{
+.topbar{
+
+    text-align:center;
+
+}
+
+.navbar{
 
     flex-direction:column;
 
@@ -274,35 +411,33 @@ header{
 
 .logo img{
 
-    height:55px;
+    height:90px;
+
+    margin-bottom:20px;
 
 }
 
 nav{
 
-    margin:20px 0;
-
     flex-wrap:wrap;
 
     justify-content:center;
 
-}
-
-.phone{
-
-    margin-bottom:10px;
+    margin-bottom:20px;
 
 }
 
 .hero{
 
-    margin-top:170px;
+    height:auto;
+
+    padding:120px 20px;
 
 }
 
 .hero h1{
 
-    font-size:36px;
+    font-size:38px;
 
 }
 
@@ -312,9 +447,23 @@ nav{
 
 }
 
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
 h2{
 
-    font-size:30px;
+    font-size:32px;
+
+}
+
+.contact{
+
+    flex-direction:column;
+
+    text-align:center;
 
 }
 
