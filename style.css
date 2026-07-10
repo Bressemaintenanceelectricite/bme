@@ -148,13 +148,15 @@ nav a:hover{
 }
 .hero-content{
 
+    width:100%;
+    max-width:1400px;
+    height:100%;
+
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
     position:relative;
-
-    z-index:2;
-
-    max-width:900px;
-
-    padding:20px;
 
 }
 
@@ -178,21 +180,9 @@ nav a:hover{
 
 .hero-buttons{
 
-    position:absolute;
-
-    right:8%;
-
-    top:50%;
-
-    transform:translateY(-50%);
-
     display:flex;
-
     flex-direction:column;
-
     gap:20px;
-
-    align-items:center;
 
 }
 
@@ -200,7 +190,7 @@ nav a:hover{
 
 ..btn-jaune{
 
-    background:#ffd000;
+    background:#FFD000;
 
     color:#111;
 
