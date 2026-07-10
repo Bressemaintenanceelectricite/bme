@@ -5,20 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Bresse Maintenance Électricité</title>
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif;}
 
 body{
-background:#f5f7fa;
+background:#f4f7fb;
 color:#222;
+line-height:1.6;
 }
 
 header{
@@ -26,17 +24,17 @@ position:fixed;
 top:0;
 left:0;
 width:100%;
-padding:20px 8%;
+padding:18px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-background:rgba(0,0,0,.75);
-backdrop-filter:blur(8px);
+background:#0b2440;
 z-index:1000;
 }
 
 header h2{
 color:white;
+font-size:30px;
 }
 
 nav a{
@@ -44,18 +42,17 @@ color:white;
 text-decoration:none;
 margin-left:30px;
 font-weight:600;
-transition:.3s;
 }
 
 nav a:hover{
-color:#ffc400;
+color:#ffd000;
 }
 
 .hero{
 
 height:100vh;
 
-background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=1600&q=80");
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=80");
 
 background-size:cover;
 
@@ -76,26 +73,24 @@ padding:20px;
 }
 
 .hero h1{
-
-font-size:60px;
-
+font-size:62px;
 margin-bottom:20px;
-
 }
 
 .hero p{
-
-font-size:24px;
-
+font-size:25px;
 margin-bottom:40px;
-
 }
 
 .btn{
 
-background:#ffc400;
+display:inline-block;
 
 padding:18px 40px;
+
+background:#ffd000;
+
+color:#111;
 
 border-radius:50px;
 
@@ -103,45 +98,32 @@ text-decoration:none;
 
 font-weight:bold;
 
-color:#111;
-
 transition:.3s;
 
 }
 
 .btn:hover{
-
-background:white;
-
+transform:scale(1.05);
 }
 
 section{
-
-padding:90px 10%;
-
+padding:90px 8%;
 }
 
 h2{
-
-font-size:38px;
-
-margin-bottom:40px;
-
 text-align:center;
-
+font-size:40px;
+margin-bottom:50px;
+color:#0b2440;
 }
 
-.cards{
-
+.grid{
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
 gap:30px;
-
 }
 
-.card{
+.box{
 
 background:white;
 
@@ -149,35 +131,29 @@ padding:35px;
 
 border-radius:20px;
 
-text-align:center;
-
 box-shadow:0 15px 35px rgba(0,0,0,.08);
 
 transition:.3s;
 
 }
 
-.card:hover{
+.box:hover{
 
 transform:translateY(-10px);
 
 }
 
-.card span{
-
-font-size:55px;
-
-}
-
-.card h3{
+.box h3{
 
 margin:20px 0;
+
+color:#0b2440;
 
 }
 
 .contact{
 
-background:#0b1d36;
+background:#0b2440;
 
 color:white;
 
@@ -185,56 +161,47 @@ text-align:center;
 
 }
 
+.contact h2{
+color:white;
+}
+
 .contact p{
-
-margin:12px 0;
-
+margin:15px;
 font-size:20px;
-
 }
 
 footer{
 
-background:#091321;
+background:#08192d;
 
 color:white;
 
-padding:30px;
-
 text-align:center;
+
+padding:30px;
 
 }
 
 @media(max-width:800px){
 
-.hero h1{
-
-font-size:38px;
-
-}
-
-.hero p{
-
-font-size:18px;
-
-}
-
 header{
-
 flex-direction:column;
-
 }
 
 nav{
-
 margin-top:15px;
-
 }
 
 nav a{
-
 margin:0 10px;
+}
 
+.hero h1{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
 }
 
 }
@@ -271,9 +238,9 @@ margin:0 10px;
 
 </p>
 
-<a class="btn" href="#contact">
+<a href="#contact" class="btn">
 
-DEMANDER UN DEVIS
+Demander un devis
 
 </a>
 
@@ -285,46 +252,26 @@ DEMANDER UN DEVIS
 
 <h2>Nos services</h2>
 
-<div class="cards">
+<div class="grid">
 
-<div class="card">
-
-<span>⚡</span>
-
-<h3>Électricité</h3>
-
-<p>Installation, rénovation, dépannage et mise aux normes.</p>
-
+<div class="box">
+<h3>⚡ Électricité</h3>
+<p>Installation, rénovation, dépannage, mise aux normes.</p>
 </div>
 
-<div class="card">
-
-<span>❄️</span>
-
-<h3>Climatisation</h3>
-
-<p>Pose, entretien et remplacement de climatisations.</p>
-
+<div class="box">
+<h3>❄ Climatisation</h3>
+<p>Pompes à chaleur, pose, entretien et dépannage.</p>
 </div>
 
-<div class="card">
-
-<span>☀️</span>
-
-<h3>Photovoltaïque</h3>
-
+<div class="box">
+<h3>☀ Photovoltaïque</h3>
 <p>Installation de panneaux solaires et autoconsommation.</p>
-
 </div>
 
-<div class="card">
-
-<span>📡</span>
-
-<h3>Fibre Optique</h3>
-
-<p>Réseaux cuivre, fibre et infrastructures télécom.</p>
-
+<div class="box">
+<h3>📡 Fibre Optique</h3>
+<p>Réseaux fibre, cuivre et infrastructures télécom.</p>
 </div>
 
 </div>
@@ -337,13 +284,13 @@ DEMANDER UN DEVIS
 
 <p><strong>Bresse Maintenance Électricité</strong></p>
 
-<p>📍 42 Route de Saint Didier - 01310 Saint-Martin-le-Châtel</p>
+<p>42 Route de Saint Didier<br>01310 Saint-Martin-le-Châtel</p>
 
 <p>📞 04 74 42 93 56</p>
 
 <p>✉ contact@bme01.fr</p>
 
-<br>
+<p>
 
 <a class="btn" href="mailto:contact@bme01.fr">
 
@@ -351,14 +298,15 @@ Envoyer un e-mail
 
 </a>
 
+</p>
+
 </section>
 
 <footer>
 
-© 2026 Bresse Maintenance Électricité - Tous droits réservés.
+© 2026 Bresse Maintenance Électricité
 
 </footer>
 
 </body>
-
 </html>
